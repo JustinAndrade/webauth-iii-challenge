@@ -1,0 +1,30 @@
+h2 {
+	font-size: 48px;
+	text-decoration: underline;
+}
+
+input {
+	margin: 10px;
+	text-align: center;
+}
+
+button {
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 5px auto;
+	padding: 5px;
+	width: 100px;
+	display: flex;
+	justify-content: center;
+}
+
+button:hover {
+	background-color: #008445;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+}

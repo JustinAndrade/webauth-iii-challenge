@@ -10,7 +10,7 @@ function generateToken(user) {
 		{
 			userId: user.id
 		},
-		'secrets jwt',
+		secrets.jwt,
 		{
 			expiresIn: '1h'
 		}
@@ -45,7 +45,6 @@ router.post('/login', (req, res) => {
 		.then((user) => {
 			if (user && bcrypt.compareSync(password, user.password)) {
 				const token = generateToken(user);
-				localStorage.setItem('jwtToken', req.headers.authorization.token);
 				if (token) {
 					res.status(200).json({
 						message: `Welcome ${user.username}!`,
