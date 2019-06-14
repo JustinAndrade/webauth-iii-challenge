@@ -4,8 +4,9 @@ h2 {
 }
 
 input {
-	margin: 10px;
 	text-align: center;
+	width: 200px;
+	margin: 0 auto;
 }
 
 button {
@@ -23,8 +24,11 @@ button:hover {
 	color: #ffffff;
 	cursor: pointer;
 }
+.main-container {
+	text-align: center;
+}
 
-.login-form {
+.default-form {
 	display: flex;
 	flex-direction: column;
 }
